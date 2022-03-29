@@ -1,1 +1,19 @@
-// TODO
+.headerContainer {
+  height: 6.5rem;
+  display: flex;
+  justify-content: center;
+}
+.headerContent {
+  height: 6.5rem;
+  width: 700px;
+
+  margin: 0 2rem;
+
+  display: flex;
+  align-items: center;
+
+  img {
+    cursor: pointer;
+    height: 27px;
+  }
+}
