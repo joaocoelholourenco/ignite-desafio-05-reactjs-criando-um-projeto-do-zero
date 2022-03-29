@@ -87,12 +87,12 @@ export default function Post({ post }: PostProps): JSX.Element {
               </div>
               <section className={styles.contentPost}>
                 {post.data.content.map(element => (
-                  <>
+                  <div key={(Math.random() * 9999999).toString()}>
                     <h2>{element.heading}</h2>
                     <p>
                       <RichText render={element.body} />
                     </p>
-                  </>
+                  </div>
                 ))}
               </section>
             </div>
