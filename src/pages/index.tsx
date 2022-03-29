@@ -70,13 +70,17 @@ export default function Home({ postsPagination }: HomeProps): JSX.Element {
                 <a>{post.data.title}</a>
               </Link>
               <p>{post.data.subtitle}</p>
-              <div className={styles.info}>
+              <div className={commonStyles.info}>
                 <div>
                   <FiCalendar />
                   <span>
-                    {format(new Date(post.first_publication_date), 'dd MMM y', {
-                      locale: ptBR,
-                    })}
+                    {format(
+                      new Date(post.first_publication_date),
+                      'dd MMM yyyy',
+                      {
+                        locale: ptBR,
+                      }
+                    )}
                   </span>
                 </div>
 
